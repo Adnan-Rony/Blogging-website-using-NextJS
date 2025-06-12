@@ -1,7 +1,10 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  images: {
+    domains: ['res.cloudinary.com', 'learn.programming-hero.com','cdn.sanity.io'],
+
+  },
 };
 
 export default nextConfig;
