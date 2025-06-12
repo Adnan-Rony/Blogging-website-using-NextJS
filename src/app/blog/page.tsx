@@ -18,16 +18,16 @@ const BlogPage = async () => {
             <Link
               className="bg-white rounded-xl shadow-md p-4 hover:shadow-xl transition-shadow duration-300 overflow-hidden lg:h-[510px] block"
               key={blog._id}
-              href={`/blogs/${blog._id}`}
+              href={`/blog/${blog._id}`}
             >
               <Image
-              src={blog.image}
-              alt={blog.title}
-              width={400}
-              height={224} // 16:9 aspect ratio or adjust as needed
-              className="object-center lg:object-cover rounded-xl"
-              priority={false} // lazy loading by default
-            />
+                src={blog.image}
+                alt={blog.title}
+                width={400}
+                height={224} // 16:9 aspect ratio or adjust as needed
+                className="w-full lg:h-56  object-center  lg:object-cover rounded-xl"
+                priority={false} // lazy loading by default
+              />
 
               <div className="p-4 space-y-3">
                 <div className="flex flex-wrap gap-2">
