@@ -14,4 +14,6 @@ export interface Blog {
   status: 'published' | 'pending' | 'rejected';
   likes: string[];
   createdAt: string;
+   excerpt?: string; 
+   
 }
